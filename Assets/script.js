@@ -7,7 +7,7 @@ const generatePassword = function () {
   return password;
 };
 
-// Special characters for the generated password
+// Declare global variables
 const lowerCase = [
   "a",
   "b",
