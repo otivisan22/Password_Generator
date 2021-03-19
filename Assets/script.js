@@ -3,6 +3,13 @@ var generateBtn = document.querySelector("#generate");
 
 // Declare function that generates the password
 const generatePassword = function () {
+const passwordLenght = prompt ("How many characters should have your password?");
+console.log (passwordLenght);
+const passwordLenghtNumber = parseInt("passwordLenght", 10);
+console.log (passwordNumber)
+
+
+
   const password = ""
   return password;
 };
