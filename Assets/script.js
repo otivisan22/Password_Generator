@@ -77,6 +77,13 @@ const SpecialCharacters = [
 ];
 
 
+// Declare four variables
+let islowerCase
+let isupperCase
+let isnumbers
+let isSpecialCharacters
+
+
 // Write password to the #password input
 function writePassword() {
   var password = generatePassword();
