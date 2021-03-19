@@ -78,15 +78,16 @@ const SpecialCharacters = [
  "&",
  "%",
  "*"
- "^"
+ ";"
 ];
 
 
 // Declare four variables
-let islowerCase
-let isupperCase
-let isnumbers
-let isSpecialCharacters
+let islowerCase;
+let isupperCase;
+let isnumbers;
+let isSpecialCharacters;
+
 
 
 // Write password to the #password input
