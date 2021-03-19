@@ -1,16 +1,14 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-// Declare function that generates the password
+// Declare function that generates the password, Declared prompt function
 const generatePassword = function () {
 const passwordLenght = prompt ("How many characters should have your password?");
 console.log (passwordLenght);
 const passwordLenghtNumber = parseInt("passwordLenght", 10);
-console.log (passwordNumber)
+console.log (passwordLenghtNumber);
 
-
-
-  const password = ""
+const password = "hej"
   return password;
 };
 
