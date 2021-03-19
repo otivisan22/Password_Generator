@@ -1,7 +1,11 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-const generatePassword = function () {};
+// Declare function that generates the password
+const generatePassword = function () {
+  const password = ""
+  return password;
+};
 
 // Special characters for the generated password
 const lowerCase = [
@@ -61,7 +65,17 @@ const upperCase = [
   "Z",
 ];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const SpecialCharacters = ["?", "!", ",", "@", "&", "%"];
+const SpecialCharacters = [
+  "?",
+ "!", 
+ ",", 
+ "@", 
+ "&",
+ "%",
+ "*"
+ "^"
+];
+
 
 // Write password to the #password input
 function writePassword() {
