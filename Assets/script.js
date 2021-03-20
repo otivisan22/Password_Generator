@@ -2,48 +2,52 @@
 var generateBtn = document.querySelector("#generate");
 
 // Declare function that generates the password, Declared prompt function
-const generatePassword = function (){
+const generatePassword = function () {
+  const passwordLenght = prompt(
+    "How many characters should have your password? Between 8 and 128 characters"
+  );
+  console.log(passwordLenght);
+  const passwordLenghtNumber = parseInt("passwordLenght", 10);
+  console.log(passwordLenghtNumber);
+  if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) {
+    // Confirmation of global variables, characters
+    islowerCase = confirm(
+      "Do you wish your password to contain lowerCase characters?"
+    );
+    console.log(lowerCasecharacter);
 
-const passwordLenght = prompt ("How many characters should have your password? Between 8 and 128 characters");
-console.log (passwordLenght);
-const passwordLenghtNumber = parseInt("passwordLenght", 10);
-console.log (passwordLenghtNumber);
-if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) }
+    isupperCase = confirm(
+      "Do you wish your password to contain upperCase characters?"
+    );
+    console.log(upperCasecharacter);
 
-// Confirmation of global variables, characters
-is lowerCase = confirm
-("Do you wish your password to contain lowerCase characters?");
-console.log (lowerCase character);
+    isnumbers = confirm("Do you wish your password to include numbers?");
+    console.log(numberscharacter);
 
-is upperCase = confirm
-("Do you wish your password to contain upperCase characters?");
-console.log (upperCase character);
+    isSpecialCharacters = confirm(
+      "Do you wish your password to contain Special characters?"
+    );
+    console.log(SpecialCharacters);
+  } else {
+    alert("the password should contain characters between 8 and 128");
+  }
+  if (islowerCase) {
+    chosencharvariab.push(lowerCaseVariable);
+  }
+  if (isupperCase) {
+    chosencharvariab.push(upperCaseVariable);
+  }
+  if (isnumbers) {
+    chosencharvariab.push(numbersVariable);
+  }
+  if (isSpecialCharacters) {
+    chosencharvariab.push(SpecialCharactersVariable);
+  } else {
+    alert("choose at least one type of character");
+  }
+  console.log("chosencharvariab");
 
-is numbers = confirm
-("Do you wish your password to include numbers?");
-console.log (numbers character);
-
-isSpecialCharacters = confirm
-("Do you wish your password to contain Special characters?");
-console.log (SpecialCharacters);
-
-} else {
-  alert ("the password should contain characters between 8 and 128");
-}
-if (islowerCase) {
-  chosencharvariab.push(lowerCaseVariable);
-} if (isupperCase)
-chosencharvariab.push(upperCaseVariable);
-} if (isnumbers)
-chosencharvariab.push(numbersVariable);
-} if (isSpecialCharacters)
-chosencharvariab.push(SpecialCharactersVariable);
-} else {
-  alert ("choose at least one type of character")
-}
-console.log ("chosencharvariab");
-
-const password = "hej"
+  const password = "hej";
   return password;
 };
 
@@ -105,25 +109,13 @@ const upperCase = [
   "Z",
 ];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-const SpecialCharacters = [
-  "?",
- "!", 
- ",", 
- "@", 
- "&",
- "%",
- "*"
- ";"
-];
-
+const SpecialCharacters = ["?", "!", ",", "@", "&", "%", "*", ";"];
 
 // Declare four variables
 let islowerCase;
 let isupperCase;
 let isnumbers;
 let isSpecialCharacters;
-
-
 
 // Write password to the #password input
 function writePassword() {
