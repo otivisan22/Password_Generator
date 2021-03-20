@@ -62,6 +62,11 @@ const SpecialCharacters = ["?", "!", ",", "@", "&", "%", "*", ";"];
 // Declare function that generates the password, Declared prompt function
 const generatePassword = function () {
   const chosencharvariab = [];
+  // Declare four variables
+  let islowerCase;
+  let isupperCase;
+  let isnumbers;
+  let isSpecialCharacters;
   const passwordLenght = prompt(
     "How many characters should have your password? Between 8 and 128 characters"
   );
@@ -109,12 +114,6 @@ const generatePassword = function () {
   const password = "hej";
   return password;
 };
-
-// Declare four variables
-let islowerCase;
-let isupperCase;
-let isnumbers;
-let isSpecialCharacters;
 
 // Write password to the #password input
 function writePassword() {
