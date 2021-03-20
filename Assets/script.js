@@ -2,12 +2,33 @@
 var generateBtn = document.querySelector("#generate");
 
 // Declare function that generates the password, Declared prompt function
-const generatePassword = function () {
+const generatePassword = function (){
+
 const passwordLenght = prompt ("How many characters should have your password? Between 8 and 128 characters");
 console.log (passwordLenght);
 const passwordLenghtNumber = parseInt("passwordLenght", 10);
 console.log (passwordLenghtNumber);
+if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) }
 
+is lowerCase = confirm
+("Do you wish your password to contain lowerCase characters?")
+console.log (lowerCase character)
+
+is upperCase = confirm
+("Do you wish your password to contain upperCase characters?")
+console.log (upperCase character)
+
+is numbers = confirm
+("Do you wish your password to include numbers?")
+console.log (numbers character)
+
+isSpecialCharacters = confirm
+("Do you wish your password to contain Special characters?")
+console.log (SpecialCharacters)
+
+} else {
+  alert ("the password should contain characters between 8 and 128")
+}
 const password = "hej"
   return password;
 };
