@@ -1,5 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
+
 // Declare global variables
 const lowerCase = [
   "a",
@@ -64,6 +65,7 @@ const SpecialCharacters = ["?", "!", ",", "@", "&", "%", "*", ";"];
 const passwordArray = [];
 const generatePassword = function () {
   const chosencharvariable = [];
+
   // Declare four variables
   let islowerCase;
   let isupperCase;
