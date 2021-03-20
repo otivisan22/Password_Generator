@@ -112,15 +112,16 @@ const generatePassword = function () {
     }
 
     console.log(chosencharvariable);
-    let randomArray = chosencharvariable(
-      Math.floor(Math.random)() * chosencharvariable.length
-    );
-    let randomCharacter = randomArray(
-      Math.floor(Math.random)() * randomCharacter.length
-    );
-    console.log = randomArray;
-    console.log = randomCharacter;
 
+    for (let i = 0; i < passwordLenght.length; i++) {
+      let randomArray = chosencharvariable(
+        Math.floor(Math.random)() * chosencharvariable.length
+      );
+      let randomCharacter = randomArray(
+        Math.floor(Math.random)() * randomCharacter.length
+      );
+      console.log = randomCharacter;
+    }
     const password = "hej";
     return password;
   }
