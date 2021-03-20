@@ -10,6 +10,7 @@ const passwordLenghtNumber = parseInt("passwordLenght", 10);
 console.log (passwordLenghtNumber);
 if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) }
 
+// Confirmation of global variables, characters
 is lowerCase = confirm
 ("Do you wish your password to contain lowerCase characters?")
 console.log (lowerCase character)
