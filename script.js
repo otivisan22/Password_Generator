@@ -124,8 +124,7 @@ const generatePassword = function () {
       passwordArray.push(randomCharacter);
     }
     console.log(passwordArray);
-    console.log(passwordArray.join(""));
-    const password = "hej";
+    const password = passwordArray.join("");
     return password;
   }
 
