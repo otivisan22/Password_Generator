@@ -12,31 +12,31 @@ if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) }
 
 // Confirmation of global variables, characters
 is lowerCase = confirm
-("Do you wish your password to contain lowerCase characters?")
-console.log (lowerCase character)
+("Do you wish your password to contain lowerCase characters?");
+console.log (lowerCase character);
 
 is upperCase = confirm
-("Do you wish your password to contain upperCase characters?")
-console.log (upperCase character)
+("Do you wish your password to contain upperCase characters?");
+console.log (upperCase character);
 
 is numbers = confirm
-("Do you wish your password to include numbers?")
-console.log (numbers character)
+("Do you wish your password to include numbers?");
+console.log (numbers character);
 
 isSpecialCharacters = confirm
-("Do you wish your password to contain Special characters?")
-console.log (SpecialCharacters)
+("Do you wish your password to contain Special characters?");
+console.log (SpecialCharacters);
 
 } else {
-  alert ("the password should contain characters between 8 and 128")
+  alert ("the password should contain characters between 8 and 128");
 }
 if (islowerCase) {
   chosencharvariab.push(lowerCaseVariable);
-} else if (isupperCase)
+} if (isupperCase)
 chosencharvariab.push(upperCaseVariable);
-} else if (isnumbers)
+} if (isnumbers)
 chosencharvariab.push(numbersVariable);
-} else if (isSpecialCharacters)
+} if (isSpecialCharacters)
 chosencharvariab.push(SpecialCharactersVariable);
 } else {
   alert ("choose at least one type of character")
