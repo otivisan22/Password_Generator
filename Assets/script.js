@@ -29,6 +29,18 @@ console.log (SpecialCharacters)
 } else {
   alert ("the password should contain characters between 8 and 128")
 }
+if (islowerCase) {
+  chosencharvariab.push(lowerCaseVariable);
+} else if (isupperCase)
+chosencharvariab.push(upperCaseVariable);
+} else if (isnumbers)
+chosencharvariab.push(numbersVariable);
+} else if (isSpecialCharacters)
+chosencharvariab.push(SpecialCharactersVariable);
+} else {
+  alert ("choose at least one type of character")
+}
+
 const password = "hej"
   return password;
 };
