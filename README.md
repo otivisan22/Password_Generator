@@ -2,4 +2,5 @@
 
 ## Description
 
-### Link to the deployed application https://otivisan22.github.io/Password_Generator/git
+### Link to the deployed application https://otivisan22.github.io/Password_Generator/
+
