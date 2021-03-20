@@ -41,6 +41,7 @@ chosencharvariab.push(SpecialCharactersVariable);
 } else {
   alert ("choose at least one type of character")
 }
+console.log ("chosencharvariab");
 
 const password = "hej"
   return password;
