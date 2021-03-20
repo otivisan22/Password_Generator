@@ -113,7 +113,7 @@ const generatePassword = function () {
 
     console.log(chosencharvariable);
 
-    for (let i = 0; i < passwordLenght.length; i++) {
+    for (let i = 0; i < passwordLenghtNumber; i++) {
       let randomArray = chosencharvariable(
         Math.floor(Math.random)() * chosencharvariable.length
       );
