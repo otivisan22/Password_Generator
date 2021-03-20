@@ -60,6 +60,7 @@ const upperCase = [
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const SpecialCharacters = ["?", "!", ",", "@", "&", "%", "*", ";"];
 // Declare function that generates the password, Declared prompt function
+const passwordArray = [];
 const generatePassword = function () {
   const chosencharvariable = [];
   // Declare four variables
@@ -120,8 +121,10 @@ const generatePassword = function () {
       let randomCharacter = randomArray(
         Math.floor(Math.random)() * randomCharacter.length
       );
-      console.log = randomCharacter;
+      passwordArray.push(randomCharacter);
     }
+    console.log(passwordArray);
+    console.log(passwordArray.join(""));
     const password = "hej";
     return password;
   }
