@@ -37,9 +37,8 @@ code .
 
 # Screenshoots
 
-![screenshot1](./assets/images/password_generator.png)
+![screenshot1](./assets/images/password_generator.jpg)
 
 # Testing
 
-- A series of tests were performed and established after each change of html elements to semantic HTML elements
-- A number of tests were performed after refactoring the styling of the page according to the semantic HTML elements.
+- A series of tests were performed in order to validated the prompts for the chosen characters
