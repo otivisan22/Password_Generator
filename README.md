@@ -23,10 +23,10 @@ code .
 - Checked if the JavaScript file is linked to the html.index
 - Declared the function that generates the password
 - Declared the global variables
--
 - Declared the prompt function which prompts the chosen variables
 - Confirmed the global variables as chosen
 - Each chosen character prompts a pop up box for confirmation
+- If the criteria is not meet an alert will pop up
 - Validation function for the type of character and for the new chosen variable
 - Specify the random index for the chosen variable
 - Fixed the error which has been encountered on the way of creating the password
