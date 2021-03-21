@@ -28,7 +28,7 @@ code .
 - Confirmed the global variables as chosen
 - Each chosen character prompts a pop up box for confirmation
 - Validation function for the type of character and for the new chosen variable
-- Specify the random index
+- Specify the random index for the chosen variable
 - Fixed the error which has been encountered on the way of creating the password
 - Formatted code using lint (prettier)
 - Commented the steps that has been performed

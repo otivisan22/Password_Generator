@@ -113,7 +113,7 @@ const generatePassword = function () {
   }
   if (!islowerCase && !isupperCase && !isnumbers && !isSpecialCharacters) {
     alert("choose at least one type of character");
-    // Specify the random index
+    // Specify the random index for the chosen variable
   } else {
     for (let i = 0; i < passwordLenghtNumber; i++) {
       const randomArray =
