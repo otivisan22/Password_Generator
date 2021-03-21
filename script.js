@@ -77,16 +77,20 @@ const generatePassword = function () {
   console.log(passwordLenghtNumber);
   if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) {
     // Confirmation of global variables, characters
+    // Confirmation for lowerCase
     islowerCase = confirm(
       "Do you wish your password to contain lowerCase characters?"
     );
     console.log(islowerCase);
+    // Confirmation for upperCase
     isupperCase = confirm(
       "Do you wish your password to contain upperCase characters?"
     );
     console.log(isupperCase);
+    // Confirmation for numbers
     isnumbers = confirm("Do you wish your password to include numbers?");
     console.log(isnumbers);
+    // Confirmation for SpecialCharacters
     isSpecialCharacters = confirm(
       "Do you wish your password to contain Special characters?"
     );
@@ -94,6 +98,7 @@ const generatePassword = function () {
   } else {
     alert("the password should contain characters between 8 and 128");
   }
+  // Validation function for the type of character and for the new chosen variable
   if (islowerCase) {
     chosencharvariable.push(lowerCase);
   }
@@ -108,6 +113,7 @@ const generatePassword = function () {
   }
   if (!islowerCase && !isupperCase && !isnumbers && !isSpecialCharacters) {
     alert("choose at least one type of character");
+    // Specify the random index
   } else {
     for (let i = 0; i < passwordLenghtNumber; i++) {
       const randomArray =
