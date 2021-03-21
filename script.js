@@ -60,17 +60,14 @@ const upperCase = [
 ];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const SpecialCharacters = ["?", "!", ",", "@", "&", "%", "*", ";"];
-
 // Declare function that generates the password, Declared prompt function
-const passwordArray = [];
 const generatePassword = function () {
-  const chosencharvariable = [];
-
-  // Declare four variables
   let islowerCase;
   let isupperCase;
   let isnumbers;
   let isSpecialCharacters;
+  const passwordArray = [];
+  const chosencharvariable = [];
   const passwordLenght = prompt(
     "How many characters should have your password? Between 8 and 128 characters"
   );
@@ -83,15 +80,12 @@ const generatePassword = function () {
       "Do you wish your password to contain lowerCase characters?"
     );
     console.log(islowerCase);
-
     isupperCase = confirm(
       "Do you wish your password to contain upperCase characters?"
     );
     console.log(isupperCase);
-
     isnumbers = confirm("Do you wish your password to include numbers?");
     console.log(isnumbers);
-
     isSpecialCharacters = confirm(
       "Do you wish your password to contain Special characters?"
     );
@@ -110,35 +104,29 @@ const generatePassword = function () {
   }
   if (isSpecialCharacters) {
     chosencharvariable.push(SpecialCharacters);
-    {
-      if (!islowerCase && !isupperCase && !isnumbers && !isSpecialCharacters)
-        alert("choose at least one type of character");
-    }
-
-    console.log(chosencharvariable);
-
+  }
+  if (!islowerCase && !isupperCase && !isnumbers && !isSpecialCharacters) {
+    alert("choose at least one type of character");
+  } else {
     for (let i = 0; i < passwordLenghtNumber; i++) {
-      let randomArray = chosencharvariable(
-        Math.floor(Math.random)() * chosencharvariable.length
-      );
-      let randomCharacter = randomArray(
-        Math.floor(Math.random)() * randomCharacter.length
-      );
+      const randomArray =
+        chosencharvariable[
+          Math.floor(Math.random() * chosencharvariable.length)
+        ];
+      const randomCharacter =
+        randomArray[Math.floor(Math.random() * randomArray.length)];
       passwordArray.push(randomCharacter);
     }
     console.log(passwordArray);
     const password = passwordArray.join("");
     return password;
   }
-
-  // Write password to the #password input
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
-
-    passwordText.value = password;
-  }
-
-  // Add event listener to generate button
-  generateBtn.addEventListener("click", writePassword);
 };
+// Write password to the #password input
+function writePassword() {
+  var password = generatePassword();
+  var passwordText = document.querySelector("#password");
+  passwordText.value = password;
+}
+// Add event listener to generate button
+generateBtn.addEventListener("click", writePassword);
