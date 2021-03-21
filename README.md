@@ -13,7 +13,7 @@ Following the user story that were given, as an employee with access to sensitiv
 - Open the project into VSCode
 - Open the 'index.html' into your default browser
 
-git clone git@github.com:
+git clone git@github.com: git@github.com:otivisan22/Password_Generator.git
 cd Password_Generator
 code .
 
