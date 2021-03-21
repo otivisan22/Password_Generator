@@ -72,29 +72,23 @@ const generatePassword = function () {
   const passwordLenght = prompt(
     "How many characters should have your password? Between 8 and 128 characters"
   );
-  console.log(passwordLenght);
   const passwordLenghtNumber = parseInt(passwordLenght, 10);
-  console.log(passwordLenghtNumber);
   if (passwordLenghtNumber >= 8 && passwordLenghtNumber <= 128) {
     // Confirmation of global variables, characters
     // Confirmation for lowerCase
     islowerCase = confirm(
       "Do you wish your password to contain lowerCase characters?"
     );
-    console.log(islowerCase);
     // Confirmation for upperCase
     isupperCase = confirm(
       "Do you wish your password to contain upperCase characters?"
     );
-    console.log(isupperCase);
     // Confirmation for numbers
     isnumbers = confirm("Do you wish your password to include numbers?");
-    console.log(isnumbers);
     // Confirmation for SpecialCharacters
     isSpecialCharacters = confirm(
       "Do you wish your password to contain Special characters?"
     );
-    console.log(isSpecialCharacters);
   } else {
     alert("the password should contain characters between 8 and 128");
   }
@@ -124,7 +118,6 @@ const generatePassword = function () {
         randomArray[Math.floor(Math.random() * randomArray.length)];
       passwordArray.push(randomCharacter);
     }
-    console.log(passwordArray);
     const password = passwordArray.join("");
     return password;
   }
